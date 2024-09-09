@@ -20,7 +20,7 @@ module.exports = {
             description: "Local Server"
         },
         {
-            url: "https://resource-hub.com",
+            url: "https://resource-app.onrender.com",
             description: "Production Server"
         }
     ],
