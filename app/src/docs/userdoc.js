@@ -237,8 +237,8 @@ const deleteUserById = {
 };
 
 module.exports = {
-    "/api/user": {"get": allUsers},
-    "/api/user/{userId}":{"get": getUserById},
-    "/api/user/register":{post:createUser},
-    "/api/user/delete/{userId}":{post :deleteUserById}
+    "/api/users": {"get": allUsers},
+    "/api/users/{userId}":{"get": getUserById},
+    "/api/users/register":{post:createUser},
+    "/api/users/delete/{userId}":{post :deleteUserById}
 }

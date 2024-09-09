@@ -51,7 +51,7 @@ class Database {
     }
 
     async sync(){
-        await this.sequelize.sync();
+        await this.sequelize.sync({force: true});
         console.log("Database synced");
     }
 }
