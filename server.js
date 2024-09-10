@@ -1,5 +1,6 @@
 
 const  apiRoutes = require('./app/src/routes/api.routes.js');
+const cors = require('cors');
 const express = require('express');
 require('dotenv').config();
 const path = require('path');
@@ -17,6 +18,13 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.use(cors({
+  'allowedHeaders': '*',  
+  'origin': '*',
+  'methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
+}));
+
 app.use(morgan("combined"));
 app.disable('x-powered-by');
 
